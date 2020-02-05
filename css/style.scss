@@ -1,7 +1,12 @@
-*{
+// GLOBAL STYLES
+
+*,
+*::before,
+*::after
+{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 h1,
@@ -13,18 +18,115 @@ h6{
     font-family: 'DM Serif Display', serif;
 }
 
-body{
-    font-size: 16px;
+html{
+    font-size: 10px;
     font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em;
+    width: 100%;
 
     &__nav{
-        display: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
     }
+
+    &__nav-items{
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient( #fff 10%, hsl(270, 9%, 17%) 10%);
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1500;
+        transition: all 650ms ease-in-out;
+
+        &--hide-mobile{
+            display: ;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 24rem;
+            background: url(../img/bg-pattern-mobile-nav.svg) center no-repeat;
+            background-size: cover;
+        }
+
+    }
+
+
+    &__nav-item-exit-icon,
+    &__nav-item-link--exit-icon{
+        position: absolute;
+        top: 1.5em;
+        right: 1.5rem;
+        width: 3rem;
+    }
+
+    &__nav-item-logo,
+    &__nav-item-link--logo{
+        position: absolute;
+        top: 1.8rem;
+        left: 1.5rem;
+        width: 10rem;
+    }
+
+    &__nav-item{
+        margin: 1.2rem;
+
+
+        &--move{
+            transform: translateY(8rem);
+        }
+    }
+
+    &__nav-item-link{
+        color: hsl(0, 0%, 98%);
+        padding: 1rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    
+        
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item{
+       
+        max-width: 90%;
+    }
+    
 }
