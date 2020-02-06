@@ -15,18 +15,29 @@
       
         <nav class="header__nav">
           <a href="#"><img src="img/logo.svg" alt="LOGO" class="header__logo"></a>
-          <a href="#" class="header__hide-desktop"><img src="img/icon-hamburger.svg" alt="" class="header__ham-logo"></a>
 
-          <ul id="nav" class="header__nav-items header__nav-items--show-desktop header__nav-items--hide-mobile">
+          <a href="#" class="header__hide-desktop">
+            <img src="img/icon-hamburger.svg" id="menu" alt="toggle menu" class="header__ham-logo" >
+          </a>
 
-            <li id="exit" class="header__nav-item">
-              <a href="#" class="header__nav-item-link--exit-icon">
+          <ul id="nav" 
+          class="
+          header__nav-items 
+          header__nav-items--show-desktop header__nav-items--hide-mobile">
+
+            <li id="exit" 
+            class="
+            header__nav-item 
+            header__nav-item--exit-icon
+            header__nav-item--hide-desktop">
                 <img src="img/icon-close.svg" alt="" class="header__nav-item-exit-icon">
-              </a>
             </li>
 
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-item-link--logo">
+            <li 
+            class="header__nav-item
+            header__nav-item--hide-desktop">
+              <a href="#" 
+              class="header__nav-item-link--logo">
                 <img src="img/logo.svg" alt="" class="header__nav-item-logo">
               </a>
             </li>
@@ -51,49 +62,68 @@
   </header>
   <main>
     <section class="hero">
-      <div class="hero__item">
-        <img src="img/image-intro-mobile.jpg" alt="" class="hero__img">
-      </div>
-      <div class="hero__item">
-        <div class="hero__copyright">
-          <h1 class="copyright__h1">Humanizing your insurance.</h1>
-          <p class="copyright__paragraph">  Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
-          <button class="btn copyright__btn"></button> 
+      <div class="hero__items">
+        <div class="hero__item--1">
+          <img src="img/image-intro-mobile.jpg" alt="" class="hero__img">
+        </div>
+        <div class="hero__item--2">
+          <div class="hero__copyright">
+            <h1 class="hero__copyright-h1">Humanizing your insurance.</h1>
+            <p class="hero__copyright-paragraph">  Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+            <div class="btn">View plans</div> 
+          </div>
         </div>
       </div>
-      
-        
-        
+    </section>
 
+    <section class="services">
+      <div class="services__service">
+        <div class="services__border"></div>
+        <h2 class="services__h2">We’re different</h2>
+      </div>
+      <div class="services__service">
+        <i class="services__icon services__icon--1"></i>
+        <h4 class="services__h4">Snappy Process</h4>
+        <p class="services__paragraph">Our application process ca be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
+      </div>
+      <div class="services__service">
+        <i class="services__icon services__icon--2"></i>
+        <h4 class="services__h4">Affordable Prices</h4>
+        <p class="services__paragraph">We don’t want you worrying about high monthly costs. Our prices may be low, 
+        but we still offer the best coverage possible.</p>
+      </div>
+      <div class="services__service">
+        <i class="services__icon services__icon--3"></i>
+        <h4 class="services__h4">People First</h4>
+        <p class="services__paragraph">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+        sure you’re covered when you need it.</p>
+      </div>
+    </section>
+    <section class="find">
+      <div class="find__card">
+        <h4 class="find__h4">Find out more about how we work</h4>
+        <a href="#" class="btn__link"><div class="btn btn--card">How we work </div></a>
+        
+      </div>
     </section>
   </main>
 
+
   
 
+  
 
+  
 
-  View plans
+  
 
-  We’re different
+  
 
-  Snappy Process
+  
 
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
+  
 
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
+  
 
   Our company
 
@@ -120,6 +150,8 @@
   Careers
   Press
   Licenses
+
+  <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>

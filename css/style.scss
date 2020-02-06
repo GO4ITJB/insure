@@ -6,7 +6,7 @@
 {
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 h1,
@@ -21,7 +21,6 @@ h6{
 html{
     font-size: 10px;
     font-family: 'Karla', sans-serif;
-    box-sizing: border-box;
 }
 
 a{
@@ -66,7 +65,7 @@ img{
         transition: all 650ms ease-in-out;
 
         &--hide-mobile{
-            display: ;
+            display: none;
         }
 
         &:after{
@@ -83,14 +82,6 @@ img{
     }
 
 
-    &__nav-item-exit-icon,
-    &__nav-item-link--exit-icon{
-        position: absolute;
-        top: 1.5em;
-        right: 1.5rem;
-        width: 3rem;
-    }
-
     &__nav-item-logo,
     &__nav-item-link--logo{
         position: absolute;
@@ -102,6 +93,12 @@ img{
     &__nav-item{
         margin: 1.2rem;
 
+        &--exit-icon{
+            position: absolute;
+            top: 1.5rem;
+            right: 1rem;
+            cursor: pointer;
+        }
 
         &--move{
             transform: translateY(8rem);
@@ -118,15 +115,155 @@ img{
         
 }
 
+// ****MAIN****
 
+// <---HERO--->
 .hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    &__item{
-       
-        max-width: 90%;
+    &__img{
+        display: block;
     }
-    
+
+    &__item--2{
+        background-color: hsl(256, 26%, 20%);
+        color: hsl(0, 0%, 98%);
+    }
+
+    &__item--2:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        background: url(../img/bg-pattern-intro-left-mobile.svg) no-repeat;
+        background-size: 35%;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    &__copyright{
+        padding: 7rem 2rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__copyright-h1{
+        font-size: 5rem;
+        letter-spacing: 1px;
+        line-height: 5rem;
+    }
+
+    &__copyright-paragraph{
+        margin-top: 1.5rem;
+        line-height: 2rem;
+    }
 }
+
+// <---BTN--->
+.btn{
+    border: 2px solid hsl(0, 0%, 98%);
+    width: fit-content;
+    margin: 3rem auto 0;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+    &__link{
+        color: hsl(0, 0%, 98%);
+    }
+
+}
+
+// <---SERVICES--->
+
+.services{
+    padding: 7rem 2rem;
+    text-align: center;
+
+    &:before{
+        content: "";
+        position: absolute;
+        right: 0;
+        background: url(../img/bg-pattern-intro-right-mobile.svg) right no-repeat;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-46rem);
+    }
+
+    &__border{
+        border: thin solid hsla(256, 25%, 20%, 0.693);
+        width: 50%;
+        margin: 0 auto 2rem;
+    }
+
+    &__h2{
+        font-size: 4rem;
+        margin-bottom: 8rem;
+    }
+
+    &__service{
+        margin: 4rem 0;
+    }
+
+    &__icon{
+        margin-bottom: 3rem;
+        height: 8.6rem;
+        display: block;
+
+        &--1{
+            background: url(../img/icon-snappy-process.svg) no-repeat;
+            background-position: center;
+        }
+
+        &--2{
+            background: url(../img/icon-affordable-prices.svg) no-repeat;
+            background-position: center;
+        }
+
+        &--3{
+            background: url(../img/icon-people-first.svg) no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__h4{
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__paragraph{
+        color: hsl(273, 4%, 51%);
+    }
+
+}
+
+// <---Find out more CARD--->
+
+.find{
+
+    
+    
+
+    &__card{
+        
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5rem 1rem;
+        color: hsl(0, 0%, 98%);
+        background: url(../img/bg-pattern-intro-right-mobile.svg) right no-repeat;
+        background-position-y: -5rem;
+        background-color: hsl(256, 26%, 20%);
+        
+    }
+
+    &__h4{
+        font-size: 4rem;
+        letter-spacing: 1px;
+        padding-bottom: 1rem;
+    }
+
+}
+
+    
