@@ -44,6 +44,10 @@ img{
 .header{
     width: 100%;
 
+    &__container{
+        padding: 1rem 2rem;
+    }
+
     &__nav{
         display: flex;
         justify-content: space-between;
@@ -54,7 +58,7 @@ img{
     &__nav-items{
         width: 100vw;
         height: 100vh;
-        background: linear-gradient( #fff 10%, hsl(270, 9%, 17%) 10%);
+        background: linear-gradient( #fff 9%, hsl(270, 9%, 17%) 9%);
         position: fixed;
         top: 0;
         right: 0;
@@ -85,9 +89,9 @@ img{
     &__nav-item-logo,
     &__nav-item-link--logo{
         position: absolute;
-        top: 1.8rem;
+        top: 1.35rem;
         left: 1.5rem;
-        width: 10rem;
+        width: 11.2rem;
     }
 
     &__nav-item{
@@ -95,8 +99,8 @@ img{
 
         &--exit-icon{
             position: absolute;
-            top: 1.5rem;
-            right: 1rem;
+            top: .8rem;
+            right: 1.8rem;
             cursor: pointer;
         }
 
@@ -161,18 +165,15 @@ img{
 
 // <---BTN--->
 .btn{
-    border: 2px solid hsl(0, 0%, 98%);
-    width: fit-content;
-    margin: 3rem auto 0;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-
-    &__link{
         color: hsl(0, 0%, 98%);
+        width: fit-content;
+        margin: 3rem auto ;
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        border: 2px solid hsl(0, 0%, 98%);
     }
 
-}
 
 // <---SERVICES--->
 
@@ -242,9 +243,6 @@ img{
 
 .find{
 
-    
-    
-
     &__card{
         
         width: 85%;
@@ -263,7 +261,87 @@ img{
         letter-spacing: 1px;
         padding-bottom: 1rem;
     }
-
 }
 
+// <---FOOTER--->
+
+.footer{   
+    margin-top: 10rem;
+    background-color: hsl(0, 0%, 98%); 
+
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        background: url(../img/bg-pattern-footer-mobile.svg) no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__items{
+        padding: 8rem 0 6rem;
+        position: relative;
+    }
     
+    &__item{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+
+        &--social{
+            display: flex;
+        }
+    }
+
+// <---BORDER--->
+    &__border{
+        border: 1px solid #E4E4E4;
+        width: 90%;
+        margin: 3rem auto;
+        
+    }    
+
+// <---LOGO--->
+
+    &__logo-img{
+        width: 100%;
+    }
+
+// <---SOCIAL--->
+    &__social-icon{
+        height: 2.4rem;
+        width: 2.4rem;
+        margin: 0 1rem;
+
+        &--1{
+            background: url(../img/icon-facebook.svg) no-repeat;
+        }
+        &--2{
+            background: url(../img/icon-twitter.svg) no-repeat;
+        }
+        &--3{
+            background: url(../img/icon-pinterest.svg) no-repeat;
+        }
+        &--4{
+            background: url(../img/icon-instagram.svg) no-repeat;
+        }
+    }
+
+    &__links{
+        color: hsl(270, 9%, 17%);
+        font-size: 1.2rem;
+        padding: .5rem;
+        text-align: center;
+
+        &:first-child{
+            color: hsl(273, 4%, 51%);
+            padding: 1rem;
+        }
+    }
+
+
+
+
+
+}
