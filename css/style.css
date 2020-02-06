@@ -291,6 +291,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 3rem;
 }
 
 .footer__border {
@@ -307,21 +308,22 @@ img {
   height: 2.4rem;
   width: 2.4rem;
   margin: 0 1rem;
+  display: block;
 }
 
-.footer__social-icon--1 {
+.footer__social-icon--facebook {
   background: url(../img/icon-facebook.svg) no-repeat;
 }
 
-.footer__social-icon--2 {
+.footer__social-icon--twitter {
   background: url(../img/icon-twitter.svg) no-repeat;
 }
 
-.footer__social-icon--3 {
+.footer__social-icon--pinterest {
   background: url(../img/icon-pinterest.svg) no-repeat;
 }
 
-.footer__social-icon--4 {
+.footer__social-icon--instagram {
   background: url(../img/icon-instagram.svg) no-repeat;
 }
 

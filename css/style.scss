@@ -291,6 +291,7 @@ img{
 
         &--social{
             display: flex;
+            margin-top: 3rem;
         }
     }
 
@@ -313,17 +314,18 @@ img{
         height: 2.4rem;
         width: 2.4rem;
         margin: 0 1rem;
+        display: block;
 
-        &--1{
+        &--facebook{
             background: url(../img/icon-facebook.svg) no-repeat;
         }
-        &--2{
+        &--twitter{
             background: url(../img/icon-twitter.svg) no-repeat;
         }
-        &--3{
+        &--pinterest{
             background: url(../img/icon-pinterest.svg) no-repeat;
         }
-        &--4{
+        &--instagram{
             background: url(../img/icon-instagram.svg) no-repeat;
         }
     }
