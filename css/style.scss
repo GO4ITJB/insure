@@ -342,8 +342,55 @@ img{
         }
     }
 
+}
+
+@media (min-width:1199px){
+    .header{
+
+        &__nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__hide-desktop{
+            display: none;
+        }
 
 
+        &__nav-items{
+            display: flex;
+            flex-direction: row;
+            height: unset;
+            width: unset;
+            background: unset;
+            position: unset;
+            top: unset;
+            right: unset;
 
+            &--show-desktop{
+                display: inherit;
+            }
 
+            &:after{
+                display: none;
+            }
+        }
+
+        &__nav-item{
+            
+
+            &--hide-desktop{
+                display: none;
+            }
+
+            &--move{
+                transform: unset;
+            }
+        }
+
+        &__nav-item-link{
+            color: hsl(273, 4%, 51%);
+        }
+    }
 }
