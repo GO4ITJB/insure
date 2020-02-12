@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="header" id="top">
-    <div class="header__container">
+    <div class="container">
       
         <nav class="header__nav">
           <a href="#"><img src="img/logo.svg" alt="LOGO" class="header__logo"></a>
@@ -62,64 +62,71 @@
   </header>
   <main>
     <section class="hero">
-      <div class="hero__items">
-        <div class="hero__item-1">
-          <!-- Not optimal but anyways... -->
-          <img src="img/image-intro-mobile.jpg" alt="" class="hero__img hero__img--hide-desktop">
-          <img src="img/image-intro-desktop.jpg" alt="" class="hero__img hero__img--hide-mobile">
-        </div>
-        <div class="hero__item-2">
-          <div class="hero__copyright">
-            <h1 class="hero__copyright-h1">Humanizing your insurance.</h1>
-            <p class="hero__copyright-paragraph">  Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
-            <a href="#footer"><div class="btn btn--hero">View plans</div></a>
+      <div class="container">
+        <div class="hero__items">
+          <div class="hero__item-1">
+            <!-- Not optimal but anyways... -->
+            <img src="img/image-intro-mobile.jpg" alt="" class="hero__img hero__img--hide-desktop">
+            <img src="img/image-intro-desktop.jpg" alt="" class="hero__img hero__img--hide-mobile">
           </div>
+          <div class="hero__item-2">
+            <div class="hero__copyright">
+              <h1 class="hero__copyright-h1">Humanizing your insurance.</h1>
+              <p class="hero__copyright-paragraph">  Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+              <a href="#footer"><div class="btn btn--hero">View plans</div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="services">
+      <div class="container services__container">
+        <div class="services__service services__service--1">
+            <div class="services__border"></div>
+            <h2 class="services__h2">We’re different</h2>
+          </div>
+        <div class="services__service services__service--2">
+          <i class="services__icon services__icon--1"></i>
+          <h4 class="services__h4">Snappy Process</h4>
+          <p class="services__paragraph">Our application process ca be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
+        </div>
+        <div class="services__service services__service--3">
+          <i class="services__icon services__icon--2"></i>
+          <h4 class="services__h4">Affordable Prices</h4>
+          <p class="services__paragraph">We don’t want you worrying about high monthly costs. Our prices may be low, 
+          but we still offer the best coverage possible.</p>
+        </div>
+        <div class="services__service services__service--4">
+          <i class="services__icon services__icon--3"></i>
+          <h4 class="services__h4">People First</h4>
+          <p class="services__paragraph">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+          sure you’re covered when you need it.</p>
         </div>
       </div>
     </section>
 
-    <section class="services">
-      <div class="services__service">
-        <div class="services__border"></div>
-        <h2 class="services__h2">We’re different</h2>
-      </div>
-      <div class="services__service">
-        <i class="services__icon services__icon--1"></i>
-        <h4 class="services__h4">Snappy Process</h4>
-        <p class="services__paragraph">Our application process ca be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
-      </div>
-      <div class="services__service">
-        <i class="services__icon services__icon--2"></i>
-        <h4 class="services__h4">Affordable Prices</h4>
-        <p class="services__paragraph">We don’t want you worrying about high monthly costs. Our prices may be low, 
-        but we still offer the best coverage possible.</p>
-      </div>
-      <div class="services__service">
-        <i class="services__icon services__icon--3"></i>
-        <h4 class="services__h4">People First</h4>
-        <p class="services__paragraph">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-        sure you’re covered when you need it.</p>
-      </div>
-    </section>
     <section class="find">
-      <div class="find__card">
-        <h4 class="find__h4">Find out more about how we work</h4>
-        <a href="#top"><div class="btn btn--card">How we work</div></a>
+      <div class="container">
+        <div class="find__card">
+          <h4 class="find__h4">Find out more about how we work</h4>
+          <a href="#top"><div class="btn btn--card">How we work</div></a>
+        </div>
       </div>
+      
     </section>
   </main>
 
 
   <footer class="footer" id="footer">
-    <div class="footer__items">
-
-      <section class="footer__logo">
-        <div class="footer__item">
+    <div class="container">
+      <div class="footer__items">
+        
+        <div class="footer__item footer__item--logo">
           <img src="img/logo.svg" alt="footer logo" class="footer__logo-img">
         </div>
-      </section>
       
-      <section class="footer__social">
         <div class="footer__item footer__item--social">
         <a href="https://facebook.com" class="footer__icon-links">
           <i class="footer__social-icon footer__social-icon--facebook"></i>
@@ -134,49 +141,42 @@
           <i class="footer__social-icon footer__social-icon--instagram"></i>
         </a>
       </div>
-      </section>
 
       <div class="footer__border"></div>
-
-      <section class="footer__our-company">
-        <div class="footer__item">
+        <div class="footer__item footer__item--our-company">
           <a href="#" class="footer__links">Our company</a>
           <a href="#" class="footer__links" id="how">How we work</a>
           <a href="#" class="footer__links">Why Insure?</a>
           <a href="#" class="footer__links">View plans</a>
           <a href="#" class="footer__links">Reviews</a>
         </div>
-      </section>
-
-      <section class="footer__help-me">
-        <div class="footer__item">
+    
+        <div class="footer__item footer__item--help-me">
           <a href="#" class="footer__links">Help me</a>
           <a href="#" class="footer__links">FAQ</a>
           <a href="#" class="footer__links">Terms of use</a>
           <a href="#" class="footer__links">Privacy policy</a>
           <a href="#" class="footer__links">Cookies</a>
         </div>
-      </section>
-
-      <section class="footer__contact">
-        <div class="footer__item">
+      
+        <div class="footer__item footer__item--contact">
           <a href="#" class="footer__links">Contact</a>
           <a href="#" class="footer__links">Sales</a>
           <a href="#" class="footer__links">Support</a>
           <a href="#" class="footer__links">Live chat</a>
         </div>
-      </section>
-
-      <section class="footer__others">
-        <div class="footer__item">
+      
+        <div class="footer__item footer__item--others">
           <a href="#" class="footer__links">Others</a>
           <a href="#" class="footer__links">Careers</a>
           <a href="#" class="footer__links">Press</a>
           <a href="#" class="footer__links">Licenses</a>
         </div>
-      </section>
+      
 
     </div>
+    </div>
+    
 
   </footer>
 </body>
