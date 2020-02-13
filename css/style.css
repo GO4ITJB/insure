@@ -399,6 +399,7 @@ img {
   }
   .header__nav-item-link {
     color: #837d87;
+    padding: 1rem 0;
   }
   .hero:before {
     content: "";
