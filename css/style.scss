@@ -51,7 +51,7 @@ img{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1em;
+        padding: 1rem 2rem;
     }
 
     &__nav-items{
@@ -522,6 +522,12 @@ img{
     }
 
     .footer{
+
+        &:before{
+            background: url(../img/bg-pattern-footer-desktop.svg) no-repeat;
+            height: 24rem;
+            
+        }
 
         &__items{
             display: grid;

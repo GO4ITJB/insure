@@ -54,7 +54,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
+  padding: 1rem 2rem;
 }
 
 .header__nav-items {
@@ -501,6 +501,10 @@ img {
   }
   .find {
     padding-top: 20rem;
+  }
+  .footer:before {
+    background: url(../img/bg-pattern-footer-desktop.svg) no-repeat;
+    height: 24rem;
   }
   .footer__items {
     display: -ms-grid;
