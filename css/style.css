@@ -486,8 +486,8 @@ img {
     content: "";
     position: absolute;
     background: url(../img/bg-pattern-intro-left-desktop.svg) left no-repeat;
-    -webkit-transform: translateY(-72.5rem);
-            transform: translateY(-72.5rem);
+    -webkit-transform: translateY(-77.5rem);
+            transform: translateY(-77.5rem);
   }
   .services__container {
     display: -ms-grid;
@@ -514,6 +514,23 @@ img {
   }
   .find {
     padding-top: 20rem;
+  }
+  .find__card {
+    background: url(../img/bg-pattern-intro-right-desktop.svg) right no-repeat;
+    background-color: #2d2640;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .find__h4 {
+    font-size: 7rem;
+    width: 48%;
+    text-align: left;
   }
   .footer:before {
     background: url(../img/bg-pattern-footer-desktop.svg) no-repeat;

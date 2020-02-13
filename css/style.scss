@@ -507,7 +507,7 @@ img{
             content: "";
             position: absolute;
             background: url(../img/bg-pattern-intro-left-desktop.svg) left no-repeat;
-            transform: translateY(-72.5rem);
+            transform: translateY(-77.5rem);
         }
 
         &__container{
@@ -540,6 +540,20 @@ img{
 
     .find{
         padding-top: 20rem;
+
+        &__card{
+            background: url(../img/bg-pattern-intro-right-desktop.svg) right no-repeat;
+            background-color: hsl(256, 26%, 20%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &__h4{
+            font-size: 7rem;
+            width: 48%;
+            text-align: left;
+        }
     }
 
     .footer{
