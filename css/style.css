@@ -401,6 +401,15 @@ img {
     color: #837d87;
     padding: 1rem 0;
   }
+  .header__nav-item-link:hover {
+    color: #2b272f;
+  }
+  .header__nav-item-link--borderbox:hover {
+    border: 1px solid #2b272f;
+    padding: 1rem 2rem;
+    background-color: #2b272f;
+    color: #fafafa;
+  }
   .hero:before {
     content: "";
     position: absolute;
@@ -462,6 +471,10 @@ img {
   .hero__copyright-h1 {
     font-size: 8rem;
     line-height: 10rem;
+  }
+  .btn:hover {
+    background-color: #fafafa;
+    color: #2b272f;
   }
   .btn--hero {
     margin: 3rem 0;
@@ -530,8 +543,12 @@ img {
   .footer__links {
     text-align: left;
   }
+  .footer__links:hover {
+    text-decoration: underline;
+  }
   .footer__links:first-child {
     padding: 1rem .5rem;
+    text-decoration: none;
   }
   .footer__social-icon {
     height: 3rem;
